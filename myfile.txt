@@ -25,3 +25,36 @@ GIT collaboration with GitHub
 
 git push
 some more changes
+
+New change:
+After registration your repository  and newproject file at Github
+https://github.com/sharks1985/gitroject/blob/master/myfile.txt
+Make sure that your are in correct directory: /c/dev/gitproject (master)
+Go to terminal: $ git pull
+If you get message like this about conflict:
+Auto-merging myfile.txt
+CONFLICT (content): Merge conflict in myfile.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+TO MAKE AND SAVE CHANGES in text file in NOTEPAD and in Github
+Make changes in the file (print something) CTRL +S – SAVE IT; close file, then open it again.
+
+Go to terminal and save changes too: $ git commit -am "resolved conflicts"
+
+Then put command: git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+then you put command: git push   (You file in Notepad and in GitHub is on the same page)
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 894 bytes | 894.00 KiB/s, done.
+Total 9 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/sharks1985/gitroject.git
+   b2ba554..7d2be90  master -> master
